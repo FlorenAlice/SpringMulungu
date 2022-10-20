@@ -15,19 +15,15 @@ import javax.persistence.*;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Endereco {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
+    private Long idEndereco;
     @Column(name = "logradouro", length = 100)
     @NotNull
     private String logradouro;
-
     @Column(name = "cep", length = 100)
     @NotNull
     private String cep;
-
     @Column(name = "cidade", length = 100)
     @NotNull
     private String cidade;
